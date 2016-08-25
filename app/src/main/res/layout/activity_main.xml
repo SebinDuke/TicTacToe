@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    tools:context="sebinduke.tictactoe.MainActivity">
+    tools:context="sebinduke.tictactoe.MainActivity"
+    android:background="#59f127"
+    >
 
     <TextView
         android:layout_width="match_parent"
@@ -12,7 +14,8 @@
         android:text="Player 1s move"
         android:textSize="30dp"
         android:textAlignment="center"
-        android:id="@+id/text"/>
+        android:id="@+id/text"
+        android:textColor="#f61e1e" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +33,9 @@
             android:layout_weight="1"
             android:id="@+id/b00"
             android:textSize="30sp"
-            />
+            android:background="#a2e3f0"
+            android:textColor="#091ced"
+            android:layout_margin="4dp"/>
 
         <Button
             android:layout_width="0dp"
@@ -38,6 +43,9 @@
             android:layout_weight="1"
             android:id="@+id/b01"
             android:textSize="30sp"
+            android:background="#a2e3f0"
+            android:textColor="#091ced"
+            android:layout_margin="4dp"
             />
 
         <Button
@@ -46,6 +54,9 @@
             android:layout_weight="1"
             android:id="@+id/b02"
             android:textSize="30sp"
+            android:background="#a2e3f0"
+            android:textColor="#091ced"
+            android:layout_margin="4dp"
             />
 
     </LinearLayout>
@@ -65,6 +76,9 @@
             android:layout_weight="1"
             android:id="@+id/b10"
             android:textSize="30sp"
+            android:background="#a2e3f0"
+            android:textColor="#091ced"
+            android:layout_margin="4dp"
             />
 
         <Button
@@ -73,6 +87,9 @@
             android:layout_weight="1"
             android:id="@+id/b11"
             android:textSize="30sp"
+            android:background="#a2e3f0"
+            android:textColor="#091ced"
+            android:layout_margin="4dp"
             />
 
         <Button
@@ -81,6 +98,9 @@
             android:layout_weight="1"
             android:id="@+id/b12"
             android:textSize="30sp"
+            android:background="#a2e3f0"
+            android:textColor="#091ced"
+            android:layout_margin="4dp"
             />
 
 
@@ -101,6 +121,9 @@
             android:layout_weight="1"
             android:id="@+id/b20"
             android:textSize="30sp"
+            android:background="#a2e3f0"
+            android:textColor="#091ced"
+            android:layout_margin="4dp"
             />
 
         <Button
@@ -109,6 +132,9 @@
             android:layout_weight="1"
             android:id="@+id/b21"
             android:textSize="30sp"
+            android:background="#a2e3f0"
+            android:textColor="#091ced"
+            android:layout_margin="4dp"
             />
 
         <Button
@@ -117,6 +143,9 @@
             android:layout_weight="1"
             android:id="@+id/b22"
             android:textSize="30sp"
+            android:background="#a2e3f0"
+            android:textColor="#091ced"
+            android:layout_margin="4dp"
             />
 
 
