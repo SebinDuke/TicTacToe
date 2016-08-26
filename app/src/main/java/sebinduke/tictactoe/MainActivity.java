@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b[2][0]=(Button)findViewById(R.id.b20);
         b[2][1]=(Button)findViewById(R.id.b21);
         b[2][2]=(Button)findViewById(R.id.b22);
-        //res=(Button)findViewById(R.id.res);
+        res=(Button)findViewById(R.id.res);
 
         for(i=0;i<3;i++)
         {
@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 b[i][j].setOnClickListener(this);
             }
         }
+        res.setOnClickListener(this);
     }
 
     private String getStr()
@@ -126,6 +127,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.b22:
                 i=2;j=2;
                 break;
+            case R.id.res:
+                for(i=0;i<3;i++)
+                {
+                    for(j=0;j<3;j++)
+                    {
+                        b[i][j].setText("");
+                        b[i][j].setEnabled(true);
+                        arr[i][j]=0;
+                    }
+                }
+                tv.setText(s1);
+                bo=true;
+                break;
             default:
                 break;
         }
@@ -135,25 +149,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             b[i][j].setEnabled(false);
             tv.setText(getS());
 
-            if(bo)
-                arr[i][j]=1;
+            if (bo)
+                arr[i][j] = 1;
             else
-                arr[i][j]=2;
+                arr[i][j] = 2;
 
-            bo=!bo;
-        }
+            bo = !bo;
 
-        int ch=checkVictory(i,j);
 
-        if(ch==1)
-        {
-            tv.setText("Player ONE has won the game");
-            endGame();
-        }
-        else if(ch==2)
-        {
-            tv.setText("Player TWO has won the game");
-            endGame();
+            int ch = checkVictory(i, j);
+
+            if (ch == 1) {
+                tv.setText("Player ONE has won the game");
+                endGame();
+            } else if (ch == 2) {
+                tv.setText("Player TWO has won the game");
+                endGame();
+            }
         }
     }
 }

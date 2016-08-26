@@ -151,4 +151,15 @@
 
     </LinearLayout>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restart Game"
+        android:id="@+id/res"
+        android:layout_below="@+id/LL3"
+        android:background="#a2e3f0"
+        android:textColor="#091ced"
+        android:layout_margin="4dp"
+        />
+
 </RelativeLayout>
